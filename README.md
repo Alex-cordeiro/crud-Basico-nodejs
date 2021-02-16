@@ -4,7 +4,7 @@ Projeto de CRUD básico usando nodejs, express e mysql baseado no projeto do liv
 
 # Instruções:
 
-Esse é um exemplo básico e simples de API REST, usando o express generator para criar a estrutura básica da aplicação e se baseando no exemplo do livro do Luiz Duarte (endereço do git dele abaixo)
+Esse é um exemplo básico e simples de API REST, usando o express generator para criar a estrutura básica da aplicação e se baseando no exemplo do livro do Luiz Duarte (endereço do git dele: https://github.com/luiztools)
 
 Caso esteja aprendendo ai vão as dicas para rodar a aplicação em sua máquina:
 
