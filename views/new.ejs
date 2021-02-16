@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h1>Cadastro de Cliente</h1>
+    <div class="tableUsers">
+
+    <center>
+        <form action="<%= action %>" class="formCadastroClientes" method="POST">
+            <label>Nome:<input type="text" name="nome" value="<%= result.nome%>"/></label>
+            <label>Idade:<input type="number" name="idade" value="<%= result.idade %>"/></label>
+            <label>UF:<select name="uf">
+                <% const s = "selected" %>
+                <option <% if(result.uf === "RS") { %><%= s%><%} %>>RS</option>
+                <option <% if(result.uf === "PR") { %><%= s%><%} %>>PR</option>
+                <option <% if(result.uf === "SC") { %><%= s%><%} %>>SC</option>
+            </select></label>
+
+            <a href="/">Cancelar</a> | <input type="submit" value="Salvar" />
+
+        </form>
+    </center>
+    </div>
+    <div class="menu">
+      <ul style="list-style: none; display: inline-block;">
+        <li style="display: inline;">
+        <a href="/new" style="text-decoration: none;">Cadastrar novo Cliente |</a>
+        </li>
+        <li style="display: inline;">
+        <a href="/" style="text-decoration: none;">Retornar</a>    
+        </li>
+    </ul>
+    </div>
+    
+</body>
+</html>

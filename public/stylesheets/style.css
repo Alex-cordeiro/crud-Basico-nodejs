@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.tableUsers{
+  width: 100%;
+  min-height: 30%;
+  height: auto;
+ 
+}
+.table{
+ width: 500px;
+ height:auto;
+}
+
+.table th{
+  background-color: brown;
+}
+
+.menu{
+  width: 100%;
+  min-height: 30%;
+  height: auto;
+}
+
+.formCadastroClientes{}

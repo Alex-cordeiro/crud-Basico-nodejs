@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Inicio</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <h1>Lista de Clientes</h1>
+    <p>Usuarios Cadastrados:</p>
+    <div class="tableUsers">
+
+      <center>
+      <table class="table" border="2">
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>UF</th>
+        <th>Ações</th>
+        <% if(!results || results.length == 0){%>
+          <tr>
+            <td colspan="4">Nenhum cliente cadastrado.</td>
+          </tr>
+        <% } else {
+          results.forEach(function(cliente){%>
+
+          <tr>
+            <td style="width: 50%"><%= cliente.nome%></td>
+            <td style="width: 15%"><%= cliente.idade%></td>
+            <td style="width: 15%"><%= cliente.uf%></td>
+            <td><a style="text-decoration: none;" href="/edit/<%= cliente.id%>">Editar</a></td>
+            <td><a style="text-decoration: none;" href="/delete/<%= cliente.id%>">Excluir</a></td>
+          </tr>
+          <%})
+        }%>
+      </table>
+    </center>
+    </div>
+    <div class="menu">
+      <a href="/new" style="text-decoration: none;">Cadastrar novo Cliente</a>
+    </div>
+  </body>
+</html>
