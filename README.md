@@ -30,5 +30,6 @@ Caso esteja aprendendo ai vão as dicas para rodar a aplicação em sua máquina
 
 -npm run test: Roda a aplicação usando o nodemon, pacode do node.js que permite a reinicialização automática do node depois de qualquer alteração de código, é só salvar o código e continuar testando...(Vide package.json)
 
+4º Acessar pelo navegador o endereço http://localhost:3000 caso a porta esteja ocupada em sua máquina é so mudar o numero de porta na função 'normalizePort' no arquivo www na pasta bin
 
 E seja feliz....
